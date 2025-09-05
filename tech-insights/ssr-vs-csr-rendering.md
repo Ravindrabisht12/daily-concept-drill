@@ -1,5 +1,3 @@
-```markdown
-
 # Server-Side vs Client-Side Rendering
 
 ## What is Server-Side Rendering (SSR)?
@@ -34,4 +32,3 @@ CSR means the server sends a minimal HTML page and JavaScript code. The browser 
 - [MDN Web Docs: Rendering on the Web](https://developer.mozilla.org/en-US/docs/Web/Performance/Rendering_on_the_Web)
 - [Server-side rendering vs client-side rendering - freeCodeCamp](https://www.freecodecamp.org/news/server-side-vs-client-side-rendering/)
 - [Other](https://dev.to/teyim/a-deep-dive-into-csr-ssr-ssg-and-isr-3513)
-```
