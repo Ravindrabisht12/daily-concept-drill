@@ -58,3 +58,65 @@ function waitForLibrary(trigger) {
 
 ---
 Add more details and examples under each section as you progress.
+
+- DOM Manipulation-:
+What is DOM Manipulation?
+
+DOM stands for Document Object Model – it’s the structure of your webpage (HTML turned into a tree of objects).
+Manipulation means changing or interacting with that structure using JavaScript.
+
+Common DOM Manipulation Tasks
+1. Select Elements
+
+```Example-:
+// By ID
+const heading = document.getElementById("main-title");
+
+// By class
+const items = document.getElementsByClassName("list-item");
+
+// By tag
+const paragraphs = document.getElementsByTagName("p");
+
+// Modern way (querySelector)
+const firstButton = document.querySelector("button"); // first match
+const allButtons = document.querySelectorAll("button"); // all matches
+
+2. Change Content
+const heading = document.getElementById("main-title");
+
+// Change text
+heading.textContent = "New Title";
+
+// Change HTML
+heading.innerHTML = "<span style='color:red;'>New Title</span>";
+
+3. Change Styles
+heading.style.color = "blue";
+heading.style.fontSize = "24px";
+
+4. Add / Remove Classes
+heading.classList.add("highlight");
+heading.classList.remove("highlight");
+heading.classList.toggle("highlight"); // adds if not present, removes if present
+
+5. Create & Append Elements
+const newDiv = document.createElement("div");
+newDiv.textContent = "Hello, I’m new!";
+document.body.appendChild(newDiv);
+
+6. Remove Elements
+newDiv.remove(); // removes element from DOM
+
+7. Event Listeners
+const button = document.querySelector("button");
+
+button.addEventListener("click", function() {
+  alert("Button was clicked!");
+});
+```
+
+✅ In short: DOM manipulation is how you make your webpage interactive and dynamic.
+
+Do you want me to also show you best practices (like when to use textContent vs innerHTML, or how to avoid performance issues)?
+
